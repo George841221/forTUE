@@ -1,2 +1,4 @@
-package com.forTUE.SwimmingRaceRegistrationManagement.models;public class CompetitorEntry {
+package com.forTUE.SwimmingRaceRegistrationManagement.models;
+
+public class CompetitorEntry {
 }

@@ -1,2 +1,4 @@
-package com.forTUE.SwimmingRaceRegistrationManagement.models;public enum UserAuthirity {
+package com.forTUE.SwimmingRaceRegistrationManagement.models;
+
+public enum UserAuthirity {
 }

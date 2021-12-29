@@ -1,2 +1,4 @@
-package com.forTUE.SwimmingRaceRegistrationManagement.models;public enum RegUserType {
+package com.forTUE.SwimmingRaceRegistrationManagement.models;
+
+public enum RegUserType {
 }

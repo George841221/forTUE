@@ -1,9 +1,11 @@
 package com.forTUE.SwimmingRaceRegistrationManagement.appControler;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-public class UserControler {
+@Controller
+public class UserController {
 
     @GetMapping({"/homePage"})
     public String home(){
