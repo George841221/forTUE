@@ -5,7 +5,6 @@ import lombok.Getter;
 @Getter
 public enum UserAuthority {
 
-    READ_HOME("Read home"),
     READ_ALL("Read all"),
     WRITE_MYSELF("Write myself"),
     WRITE_ALL("Write all"),

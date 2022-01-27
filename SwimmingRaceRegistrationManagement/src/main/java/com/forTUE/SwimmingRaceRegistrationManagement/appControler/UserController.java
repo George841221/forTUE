@@ -1,29 +1,19 @@
 package com.forTUE.SwimmingRaceRegistrationManagement.appControler;
 
-
-import com.forTUE.SwimmingRaceRegistrationManagement.appService.RegLoginService;
 import com.forTUE.SwimmingRaceRegistrationManagement.jpaRepos.UserRepo;
 import com.forTUE.SwimmingRaceRegistrationManagement.models.RegUser;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Controller
 public class UserController {
 
     @Autowired
     private UserRepo userRepo;
-
-
 
     @GetMapping(value = {"/","/home"})
     public String viewHomePage(){
@@ -41,7 +31,6 @@ public class UserController {
 
         return "regPage";
     }
-
 
     @GetMapping(value ="/process_register")
     public String processRegister(Model model, RegUser user) {
