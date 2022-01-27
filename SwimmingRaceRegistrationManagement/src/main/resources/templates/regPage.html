@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="style/styleRegLoginPage.css">
+    <link rel="stylesheet" href="styleRegLoginPage.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -21,10 +24,8 @@
         <div>
             <header>
                 <ul class="nav justify-content-end">
-                    <li class="nav-item"><a class="btn btn-primary" href="loginPage.html">Bejelentkezés</a></li>
-                    <li class="nav-item"><a class="btn btn-info" href="homePage.html">Kezdőlap</a></li>
-                    <li class="nav-item "><a class="btn btn-info" href="#">Korcsoportok</a></li>
-                    <li class="nav-item "><a class="btn btn-info" href="#">Nevezések</a></li>
+                    <li class="nav-item"><a class="btn btn-primary" data-th-href="@{/login}">Bejelentkezés</a></li>
+                    <li class="nav-item"><a class="btn btn-info" data-th-href="@{/home}">Kezdőlap</a></li>
                 </ul>      
             </header>  
         </div>
@@ -32,48 +33,58 @@
 
     <Section id= "reg-log">
         <div>
-            <h2>Regisztrácó</h2>
+            <h2>Regisztráció</h2>
         </div>
-
-        <div>
-            <label class="labelStyle" for="">
-                <h5>Név</h5>
-            </label>
-            <input type="text">
-        </div>
-
-        <div>
-            <label class="labelStyle" for="">
-                <h5>Felhasználónév</h5>
-            </label>
-            <input type="text">
-        </div>
-
-        <div>
-            <label class="labelStyle" for="">
-                <h5>E-mail</h5>
-            </label>
-            <input type="email">
-        </div>
-
-        <div>
-            <label class="labelStyle" for="">
-                <h5>Jelszó</h5>
-            </label>
-            <input type="password">
-        </div>
-
-        <div>
-            <label class="labelStyle" for="">
-                <h5>Jelszó újra</h5>
-            </label>
-            <input type="password">
-        </div>
-
-        <div>
-            <button>Regisztréció</button>
-        </div>
-
+        
+        <form action="post" th:action="@{/process_register}" th:object="${user}">
+            <div>
+                <label class="labelStyle" >
+                    <h5>Név</h5>
+                </label>
+                <input type="text"  th:field="*{fullName}">
+            </div>
+    
+            <div>
+                <label class="labelStyle" >
+                    <h5>Felhasználónév</h5>
+                </label>
+                <input type="text" th:field="*{userName}">
+            </div>
+    
+            <div>
+                <label class="labelStyle" >
+                    <h5>E-mail cím</h5>
+                </label>
+                <input type="text" th:field="*{eMail}">
+            </div>
+    
+            <div>
+                <label class="labelStyle">
+                    <h5>Telefon</h5>
+                </label>
+                <input type="tel" th:field="*{telNum}">
+            </div>
+    
+            <div>
+                <label class="labelStyle" >
+                    <h5>Jelszó</h5>
+                </label>
+                <input type="password" th:field="*{password}">
+            </div>        
+    
+            <div>
+                <label class="labelStyle" >
+                    <h5>Jelszó újra</h5>
+                </label>
+                <input type="password" th:field="*{password}">
+            </div>
+    
+            <div>
+                <input type="submit" class="btn btn-primary" />
+    
+            </div>
+        </form>
+            
     </div>
     </Section>
 

@@ -1,11 +1,21 @@
 package com.forTUE.SwimmingRaceRegistrationManagement.models;
 
-public enum UserAuthirity {
+import lombok.Getter;
 
-    READ_HOME,
-    READ_ALL,
-    WRITE_MYSELF,
-    WRITE_ALL,
-    DELETE_MYSELF,
-    DELETE_ALL
+@Getter
+public enum UserAuthority {
+
+    READ_HOME("Read home"),
+    READ_ALL("Read all"),
+    WRITE_MYSELF("Write myself"),
+    WRITE_ALL("Write all"),
+    UPLOAD_DATA("Upload data"),
+    DELETE_MYSELF("Delete myself"),
+    DELETE_ALl("Delete all");
+
+    private String label;
+
+    UserAuthority(String labels){
+        this.label = labels;
+    }
 }

@@ -1,3 +1,5 @@
 CREATE DATABASE forTUEDB;
 
 USE forTUEDB;
+
+SELECT * FROM reg_user;

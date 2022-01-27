@@ -4,10 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 import java.util.Collection;
 
 @Entity
@@ -15,7 +14,7 @@ import java.util.Collection;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class RegUser implements UserDetails {
+public class RegUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,43 +25,14 @@ public class RegUser implements UserDetails {
     private String userName;
     @Column(nullable = false)
     private String password;
+    @Email
     @Column(nullable = false)
-    private String eMale;
+    private String eMail;
+    @Column(nullable = false)
+    private String telNum;
     private boolean enabled = false;
     private boolean locked = false;
 
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;  // TODO
-    }
 
-    @Override
-    public String getUsername() {
-        return userName;
-    }
 
-    @Override
-    public String getPassword(){
-        return password;
-    }
-
-    @Override
-    public boolean isAccountNonExpired() {
-        return true;
-    }
-
-    @Override
-    public boolean isAccountNonLocked() {
-        return !locked;
-    }
-
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return true;
-    }
-
-    @Override
-    public boolean isEnabled() {
-        return enabled;
-    }
 }

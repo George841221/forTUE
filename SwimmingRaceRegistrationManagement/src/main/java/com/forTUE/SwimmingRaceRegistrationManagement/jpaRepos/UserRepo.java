@@ -1,2 +1,11 @@
-package com.forTUE.SwimmingRaceRegistrationManagement.jpaRepos;public class UserRepo {
+package com.forTUE.SwimmingRaceRegistrationManagement.jpaRepos;
+
+import com.forTUE.SwimmingRaceRegistrationManagement.models.RegUser;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.RepositoryDefinition;
+import org.springframework.stereotype.Repository;
+
+
+@Repository
+public interface UserRepo extends JpaRepository<RegUser,Long> {
 }
