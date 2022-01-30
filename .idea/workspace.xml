@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eaa1b2d-132b-421a-bb78-b8c2a61090cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/java/com/forTUE/SwimmingRaceRegistrationManagement/jpaRepos/UserRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/static/styleHomePage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/static/styleRegLoginPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/templates/leggedInUser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/java/com/forTUE/SwimmingRaceRegistrationManagement/appControler/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/java/com/forTUE/SwimmingRaceRegistrationManagement/appControler/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/java/com/forTUE/SwimmingRaceRegistrationManagement/appSecurity/AppSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/java/com/forTUE/SwimmingRaceRegistrationManagement/appSecurity/AppSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/java/com/forTUE/SwimmingRaceRegistrationManagement/appService/RegLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/java/com/forTUE/SwimmingRaceRegistrationManagement/appService/RegLoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/java/com/forTUE/SwimmingRaceRegistrationManagement/models/RegUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/java/com/forTUE/SwimmingRaceRegistrationManagement/models/RegUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/forTUEDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/forTUEDB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/templates/homePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/loginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/templates/loginPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/regPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/templates/regPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/style/styleHomePage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/style/styleRegLoginPage.css" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/static/passchecker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/templates/regPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SwimmingRaceRegistrationManagement/src/main/resources/templates/regPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +34,7 @@
       <option name="presentableId" value="Default" />
       <updated>1642263356775</updated>
       <workItem from="1642263360368" duration="37000" />
+      <workItem from="1643463420536" duration="40000" />
     </task>
     <servers />
   </component>

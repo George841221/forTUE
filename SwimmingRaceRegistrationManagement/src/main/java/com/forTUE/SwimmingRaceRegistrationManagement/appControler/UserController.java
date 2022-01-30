@@ -41,8 +41,10 @@ public class UserController {
 
         userRepo.save(user);
 
-        return "loginPage";
+        return "regCompleted";
     }
+
+
 
     @PostMapping({"/logout"})
         public String logOut(){
